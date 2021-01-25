@@ -12,7 +12,7 @@ function generateJoke() {
             "Accept": "application/json"
         }
     }).then(res => res.json()).then(data => {
-        // Quotes and authors were saved in an array of objects so in order to get random quotes this line of code was used
+        // Quotes and authors were saved in an array of objects so in order to get random quotes this line of code was used.
         var numbers = Math.floor(Math.random() * 100) 
         quote.innerHTML = data[numbers].text
         author.innerHTML = data[numbers].author
